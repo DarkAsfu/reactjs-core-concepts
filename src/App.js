@@ -13,9 +13,8 @@ const musicStyle = {
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Friend></Friend>
-      <Person></Person>
+      <Person name = "ashraful" surName = "islam"></Person>
+      <Person name="rubel" naika="xyz"></Person>
       <Friend></Friend>
       <Person></Person>
       <Friend></Friend>
@@ -26,10 +25,11 @@ function App() {
     </div>
   );
 }
-function Person() {
+function Person(props) {
+  console.log(props);
   return (
   <div className='person'>
-    <h1>Sakib Al Hasan</h1>
+    <h1>{props.name} {props.surName} {props.naika}</h1>
     <p>Profession: Cricket</p>
   </div>
   )
