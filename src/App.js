@@ -13,31 +13,34 @@ const musicStyle = {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hello JSX</h1>
-         <div className="container">
-          <h3>Hello dude react , How are you</h3>
-         </div>
-         <div className="music">
-          <p style={musicStyle} >Name: {55+ num}</p>
-          <p style={musicStyle} >Player name: {player.name}</p>
-          <p style={{color : "gray", backgroundColor : "pink"}}>Age: {player.age}</p>
-         </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Friend></Friend>
+      <Person></Person>
+      <Friend></Friend>
+      <Person></Person>
+      <Friend></Friend>
+      <Person></Person>
+      <Friend></Friend>
+      <Person></Person>
+      <Friend></Friend>
     </div>
   );
 }
+function Person() {
+  return (
+  <div className='person'>
+    <h1>Sakib Al Hasan</h1>
+    <p>Profession: Cricket</p>
+  </div>
+  )
+}
 
+function Friend() {
+  return (
+    <div className='friend'>
+      <h3>Name: Ajay</h3>
+      <p>Job: maramari</p>
+    </div>
+  )
+}
 export default App;
